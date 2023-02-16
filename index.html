@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>FotoBook</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="estilo.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Titan+One');
+        </style>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">       
+        <nav class="navbar fixed-top navbar-dark navbar-expand-sm" style="background-color:#1C2331;">
+            <a href="#" class="navbar-brand font-weight-bold"><img src="img/fb.png"  class="d-inline-block align-top" alt=""> FotoBook</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barranav" aria-controls="navbarTogglerDemo01" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barranav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#acerca">Acerca</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#ventanamodal">Acceder <i class="fas fa-sign-in-alt"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <main role="main">
+            <div class="jumbotron2 jumbotron-fluid fb-seccion fb-bglight">
+                <video autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                </video>
+                <div class="container-fluid text-white midcentrado">
+                    <h1 class="titulo" id="inicio"><i class="fas fa-camera" style="font-size:1.5em; color:#56BED3"></i> Bienvenidos a FotoBook</h1>               
+                    <p>la web de los fotógrafos y diseñadores!</p>
+                </div>
+            </div>
+            <div class="container-fluid fb-seccionplus fb-bgoscuro">
+                <div class="row">
+                    <h3 class="titulo" id="servicios"><i class="fas fa-cog"></i> Servicios</h3>
+                </div>
+                <div class="card-deck">
+                    <div class="card tarjetas">
+                        <img class="card-img-top" src="img/camara.jpg">
+                        <div class="card-header"><h5 class="card-title">FOTÓGRAFOS PROFESIONALES</h5></div>
+                        <div class="card-body">¿Quieres las mejor sesión para potenciar tu imagen o producto? <b>FotoBook</b> te ofrece los mejores fotógrafos en función de la idea que hayais desarrollado.</div>
+                        <div class="card-footer"><a href="#" class="card-link">+ info</a></div>
+                    </div>
+                    <div class="card tarjetas">
+                        <img class="card-img-top" src="img/maquillaje.jpg">
+                        <div class="card-header"><h5 class="card-title">MAQUILLAJE</h5></div>
+                        <div class="card-body">¿Quieres sacarle todo el partido a la imagen? Llevamos muchos años contratando peluquería y maquillaje para todos nuestros shootings y rodajes, no dudes en pedirnos presupuesto.</div>
+                        <div class="card-footer"><a href="#" class="card-link">+ info</a></div>
+                    </div>
+                    <div class="card tarjetas">
+                        <img class="card-img-top" src="img/video.jpg">
+                        <div class="card-header"><h5 class="card-title">VIDEO</h5></div>
+                        <div class="card-body">¿Tienes que grabar y no sabes cómo? Contamos con los mejores equipos de realización y videograbación para ponerlo en tus manos. Cuenta con nosostros!</div>
+                        <div class="card-footer"><a href="#" class="card-link">+ info</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid fb-seccion fb-bglight">
+                <div class="row">
+                    <h3 class="titulo" id="galeria"><i class="fas fa-images"></i> Galeria</h3>
+                </div>
+                <div class="row pestabs">
+                    <div class="col-md-12">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item">
+                              <a class="nav-link active" href="#carrusel2" data-toggle="tab">Carrusel Imágenes</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#portfolio" data-toggle="tab">Portfolio</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content pestcontent">
+                            <div class="tab-pane fade show active" id="carrusel2">
+                                <div id="carrusel" class="carousel slide col-md-8 offset-md-2" data-ride="carousel">
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carrusel" data-slide-to="1"></li>
+                                        <li data-target="#carrusel" data-slide-to="2"></li>
+                                    </ul>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/camara.jpg">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/fondo.jpg">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/video.jpg">
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="portfolio">
+                                <div class="col-md-12">  
+                                    <div class="row">
+                                        <div class="col-md-4 imgaleria"><img src="img/camara1.jpg"></div>
+                                        <div class="col-md-4 imgaleria"><img src="img/camara3.jpg"></div>
+                                        <div class="col-md-4 imgaleria"><img src="img/camara5.jpg"></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4 imgaleria"><img src="img/camara2.jpg"></div>
+                                        <div class="col-md-4 imgaleria"><img src="img/camara4.jpg"></div>
+                                        <div class="col-md-4 imgaleria"><img src="img/camara6.jpg"></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4 imgaleria"><img src="img/camara.jpg"></div>
+                                        <div class="col-md-4 imgaleria"><img src="img/fondo.jpg"></div>
+                                        <div class="col-md-4 imgaleria"><img src="img/video.jpg"></div>
+                                    </div>         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid fb-seccion fb-bgoscuro">
+                <div class="row">
+                    <h3 class="titulo" id="acerca"><i class="fas fa-users"></i> Acerca</h3>
+                </div>
+                <div class="row pestcontent">
+                    <div class="col-md-3">
+                        <img src="img/teamfotobook.jpg" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-md-5 text-justify">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+                        </p>
+                    </div>
+                    <div class="accordion col-md-4" id="acordeon">
+                        <div class="card card-fluid">
+                            <div class="card-header" id="headinguno">
+                                <h5 class="mb-0">
+                                    <a href="#" data-toggle="collapse" data-target="#collapseuno"><i class="fas fa-camera-retro"></i> Fotografía para empresas</a>
+                                </h5>
+                            </div>
+                            <div id="collapseuno" class="collapse show" data-parent="#acordeon">
+                                <div class="card-body fb-bgoscuro">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingdos">
+                                    <h5 class="mb-0">
+                                        <a href="#" data-toggle="collapse" data-target="#collapsedos"><i class="fas fa-camera-retro"></i> Fotografías de interiores</a>
+                                    </h5>
+                                </div>
+                                <div id="collapsedos" class="collapse" data-parent="#acordeon">
+                                    <div class="card-body fb-bgoscuro">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingtres">
+                                    <h5 class="mb-0">
+                                        <a href="#" data-toggle="collapse" data-target="#collapsetres"><i class="fas fa-camera-retro"></i> Fotografías de exteriores</a>
+                                    </h5>
+                                </div>
+                                <div id="collapsetres" class="collapse" data-parent="#acordeon">
+                                    <div class="card-body fb-bgoscuro">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid fb-seccion fb-light">
+                <div class="row">
+                    <h3 class="titulo" id="contacto"><i class="fas fa-location-arrow"></i> Contacto</h3>
+                </div>
+                <div class="row pestcontent">
+                    <div class="col-md-6">
+                        <form action="#" method="post">
+                            <div class="form-group row">
+                                <label for="nomyapel" class="col-sm-3 col-form-label">Nombre y Apellidos</label>
+                                <div class="col-sm-9">
+                                    <input type="tel" class="form-control" id="nomyapel" placeholder="Nombre y Apellidos">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-sm-3 col-form-label">Email</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" onChange="comprueba()">
+                                    <div class="valid-feedback">Gracias por incluir tu email!</div>
+                                    <div class="invalid-feedback">Error en el formato!</div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="url" class="col-sm-3 col-form-label">URL Web</label>
+                                <div class="col-sm-9">
+                                    <input type="url" class="form-control" id="url" placeholder="Página web" aria-describedby="urlmensa">
+                                    <small id="urlmensa" class="form-text text-muted">
+                                        No es necesario indicar una página web
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="tel" class="col-sm-3 col-form-label">Teléfono</label>
+                                <div class="col-sm-9">
+                                    <input type="tel" class="form-control" id="tel" placeholder="Teléfono" pattern="[0-9]{9}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="adj" class="col-sm-3 col-form-label">Currículum</label>
+                                <div class="col-sm-9">
+                                    <input type="file" class="form-control-file border" accept="image/png, application/pdf">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="comen" class="col-sm-3 col-form-label">Comentario</label>
+                                <div class="col-sm-9">
+                                     <textarea class="form-control" rows="5" id="comen"></textarea>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-checkbox was-validated">
+                                <input type="checkbox" class="custom-control-input" id="menres" required>
+                                <label class="custom-control-label" for="menres">Acepta recibir mensaje de respuesta</label>
+                            </div>
+                            <div class="form-row justify-content-end pestabs">
+                                <div class="col-4">
+                                    <button type="reset" class="btn btn-outline-secondary btn-sm btn-block"  data-toggle="tooltip" data-placement="left" data-html="true" title="Se borrarán los datos <i class='fas fa-info-circle'></i>">Reset</button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="submit" class="btn btn-outline-primary btn-sm btn-block">Enviar</button>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
+                    <div class="col-md-6">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.1352110917546!2d2.156118250419407!3d41.392869903517415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a291bb6e2b11%3A0x146264505f49849c!2sCepi+Base!5e0!3m2!1ses!2ses!4v1530726662291" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-around mb-3 pestabs pestcontent">
+                    <div class="p-2 mr-5">
+                        <i class="fab fa-facebook-f fa-5x"></i>
+                    </div>
+                    <div class="p-2  mr-5">
+                        <i class="fab fa-twitter fa-5x"></i>
+                    </div>
+                    <div class="p-2  mr-5">
+                        <i class="fab fa-instagram fa-5x"></i>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <div class="alert alert-info alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <p>Esta web utiliza cookies para obtener datos estadísticos de la navegación de sus usuarios. Si continúas navegando consideramos que aceptas su uso.
+            <a href="terminos.html">Más información</a>
+        </div>
+        <footer class="fb-bgoscuro">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-2">
+                        <div class="p-2 mr-5 pestabs pestcontent">
+                            <h5>Enlaces</h5>
+                            <ul class="list-unstyled quick-links">
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Inicio</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Servicios</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Galeria</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Acerca</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="p-2 mr-5 pestabs pestcontent">
+                            <h5>Enlaces</h5>
+                            <ul class="list-unstyled quick-links">
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Inicio</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Servicios</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Galeria</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Acerca</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="p-2 mr-5 pestabs pestcontent">
+                            <h5>Enlaces</h5>
+                            <ul class="list-unstyled quick-links">
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Inicio</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Servicios</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Galeria</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Acerca</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i>Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-white">
+                        <p>Mediante nuestra página web encontrarás a los mejores profesionales del sector</p>
+                        <p class="h6">&copy Todos los derechos reservados.<a class="text-green ml-2" href="index">FotoBook</a></p>
+                    </div>
+                    <hr/>
+                </div>
+            </div>
+        </footer>
+        <div class="modal fade" id="ventanamodal">
+            <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content modalestilo">
+                            <div class="modal-header">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                      <a class="nav-item nav-link active" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true"><i class="fas fa-hand-spock"></i> Login</a>
+                                      <a class="nav-item nav-link" id="nav-registro-tab" data-toggle="tab" href="#nav-registro" role="tab" aria-controls="nav-registro" aria-selected="false"><i class="fas fa-user"></i> Registro</a>
+                                      <a class="nav-item nav-link" id="nav-recordar-tab" data-toggle="tab" href="#nav-recordar" role="tab" aria-controls="nav-recordar" aria-selected="false"><i class="fas fa-key"></i> Recordar</a>
+                                    </div>
+                                </nav>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img src="img/img_avatar.png" class="rounded-circle mx-auto d-block" width="150" height="150">
+                                                <form>
+                                                    <input type="text" class="form-control col-md-8 mx-auto d-block pestcontent" id="usr" placeholder="Introduce el usuario">
+                                                    <input type="password" class="form-control col-md-8 mx-auto d-block pestcontent" id="pwd" placeholder="Introduce la contraseña">
+                                                    <button type="button" class="btn btn-primary btn-lg col-md-8 mx-auto d-block pestcontent" onClick="javascript:validar()" >Acceder</button>
+                                                    <div class="custom-control custom-checkbox col-md-8 mx-auto d-block pestcontent">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                                                        <label class="custom-control-label float-right" for="customCheck">Recuérdame</label>
+                                                    </div>                                            
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-registro" role="tabpanel" aria-labelledby="nav-registro-tab">
+                                        <form>
+                                            
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="nomregnue" class="col-md-6">Nombre</label>
+                                                    <input type="text" name="nomregnue">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="emailregnue" class="col-md-6">Email</label>
+                                                    <input type="text" name="emailregnue">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="usuregnue" class="col-md-6">Usuario</label>
+                                                    <input type="text" name="usuregnue">
+                                                </div>
+                                            </div>
+                                            <div class="form-row col-md-12 pestabs">
+                                                <div class="col-md-7">Sexo</div>
+                                                <div class="custom-control custom-radio custom-control-inline center">
+                                                    <input type="radio" class="custom-control-input" id="rhombre" name="optradio">
+                                                    <label class="custom-control-label" for="rhombre">Hombre</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" class="custom-control-input" id="rmujer" name="optradio">
+                                                    <label class="custom-control-label" for="rmujer">Mujer</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="fechanac" class="col-md-6">Fecha nacimiento</label>
+                                                    <input type="date" class="custom-select col-md-5" name="fechanac">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="pais" class="col-md-6">País</label>
+                                                    <select class="custom-select col-md-5" id="pais">
+                                                        <option selected>Seleccione el país</option>
+                                                        <option value="1">España</option>
+                                                        <option value="2">Alemania</option>
+                                                        <option value="3">Italia</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="color" class="col-md-6">Color principal perfil</label>
+                                                    <input type="color" name="color" value="#000000" list="colores" />
+                                                    <datalist id="colores">
+                                                      <option>#ff0000</option>
+                                                      <option>#0000ff</option>
+                                                      <option>#00ff00</option>
+                                                      <option>#ffff00</option>
+                                                      <option>#00ffff</option>
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                            <div class="custom-control custom-checkbox was-validated pestabs float-right">
+                                                <input type="checkbox" class="custom-control-input" id="cacep" required>
+                                                <label class="custom-control-label" for="cacep">Acepta las condiciones de uso</label>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-lg btn-block">Registrarme</button>
+                                        </form>                                        
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-recordar" role="tabpanel" aria-labelledby="nav-recordar-tab">
+                                        <div class="form-group">
+                                            <label for="email" class="text-justify pestabs">Por favor introduzca su cuenta de correo electrónico, le enviaremos un correo electrónico donde encontrará los pasos necesarios para recuperar su contraseña.</label>
+                                            <input type="email" id="emailreco" class="form-control" name="emailreco" placeholder="Introduzca la dirección email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" class="btn btn-primary btn-lg float-right" value="Recuperar contraseña" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer mx-auto d-block">
+                                <i class="fas fa-thumbs-up"></i> Visítanos en : 
+                                <a href="#"><i class="fab fa-facebook"></i> FaceBook</a> / 
+                                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a> / 
+                                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            function comprueba(){
+                valor = document.getElementById("email").value;
+                var re = /\S+@\S+\.\S+/;
+                if(re.test(valor)) {
+                    $('#email').addClass('is-valid');
+                }else{
+                    $('#email').addClass('is-invalid');  
+                }
+            }
+            function validar(){
+                if(document.getElementById("usr").value === "jaime" && document.getElementById("pwd").value === "12345" ){
+                    location.href="perfil.html";
+                }
+                else{
+                    location.href="index.html";
+                }
+            }
+        </script>
+    </body>   
+</html>
